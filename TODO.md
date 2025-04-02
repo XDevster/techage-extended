@@ -1,0 +1,5 @@
+- [ ] TA 3 Centrifuge
+- [ ] TA 3.5 Gas Centrifuge
+- [ ] TA 3.5 RBMK
+- [ ] TA 3.5 PWR
+- [ ] Steel, Iron and Copper plates (made via TA3 Furnace)

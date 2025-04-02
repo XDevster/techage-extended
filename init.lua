@@ -13,7 +13,7 @@
 techage = {}
 
 -- Version for compatibility checks, see readme.md/history
-techage.version = 1.23
+techage.version = 1.24
 
 if minetest.global_exists("tubelib") then
 	minetest.log("error", "[techage] Techage can't be used together with the mod tubelib!")
@@ -424,6 +424,9 @@ dofile(MP.."/collider/inlets.lua")
 dofile(MP.."/collider/cooler.lua")
 dofile(MP.."/collider/detector.lua")
 dofile(MP.."/collider/worker.lua")
+
+-- TA3.5
+--dofile()
 
 -- TA5 Teleport
 dofile(MP.."/teleport/teleport_tube.lua")
