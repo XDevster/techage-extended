@@ -1,4 +1,4 @@
-# Tech Age [techage] (Minetest 5.4+)
+# Tech Age Extended [techage] (Minetest 5.4+)
 
 Tech Age, a mod to go through 5 tech ages in search of wealth and power.
 
