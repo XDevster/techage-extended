@@ -60,8 +60,8 @@ local function formspec(self, pos, nvm)
 		default.gui_bg_img..
 		default.gui_slots..
 		techage.wrench_image(7.6, -0.2) ..
-		"list[context;src;0,0;4,1;]"..
-		mConf.preassigned_stacks(pos, 4, 1)..
+		"list[context;src;0,0;2,2;]"..
+		mConf.preassigned_stacks(pos, 2, 2)..
 		"image[2,0.5;1,1;techage_form_arrow_bg.png^[lowpart:"..
 		(nvm.item_percent or 0)..":techage_form_arrow_fg.png^[transformR270]"..
 		"image_button[2,2;1,1;".. self:get_state_button_image(nvm) ..";state_button;]"..
