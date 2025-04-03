@@ -237,12 +237,12 @@ local tiles = {}
 -- '#' will be replaced by the stage number
 tiles.pas = {
 	-- up, down, right, left, back, front
-	"techage_concrete.png^techage_frame_ta#_top.png",
-	"techage_concrete.png^techage_frame_ta#_top.png",
-	"techage_concrete.png^techage_frame_ta#.png^techage_appl_outp.png",
-	"techage_concrete.png^techage_frame_ta#.png^techage_appl_inp.png",
-	"techage_concrete.png^techage_frame_ta#.png",
-	"techage_concrete.png^techage_appl_furnace.png^techage_frame_ta#.png",
+	"techage_centop.png^techage_frame_ta2.png",
+	"techage_centop.png^techage_frame_ta2.png",
+	"techage_centop.png^techage_frame_ta2.png^techage_appl_outp.png",
+	"techage_centop.png^techage_frame_ta2.png^techage_appl_inp.png",
+	"techage_centop.png^techage_frame_ta2.png",
+	"techage_concrete.png^techage_cenf.png^techage_frame_ta2.png",button
 }
 tiles.act = tiles.pas
 
