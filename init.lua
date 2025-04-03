@@ -443,13 +443,6 @@ dofile(MP.."/fusion_reactor/generator.lua")
 dofile(MP.."/fusion_reactor/turbine.lua")
 dofile(MP.."/fusion_reactor/ta5_pump.lua")
 
-<<<<<<< HEAD
-=======
--- Ore generation
-dofile(MP.."/basis/oregen.lua")
-dofile(MP.."/basis/uranium_ore.lua")
-
->>>>>>> 0e3f757 (uranium ore)
 -- Beduino extensions
 dofile(MP.."/beduino/kv_store.lua")
 
