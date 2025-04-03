@@ -266,6 +266,7 @@ dofile(MP.."/oil/reboiler.lua")
 -- TA3 power based
 dofile(MP.."/ta3_power/tiny_generator.lua")
 dofile(MP.."/ta3_power/akkubox.lua")
+dofile(MP.."/ta3_power/cobaltakkubox.lua")
 dofile(MP.."/ta3_power/axle2power.lua")
 dofile(MP.."/ta3_power/power2axle.lua")
 
