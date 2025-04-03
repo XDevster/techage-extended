@@ -444,8 +444,8 @@ dofile(MP.."/fusion_reactor/turbine.lua")
 dofile(MP.."/fusion_reactor/ta5_pump.lua")
 
 -- Ores
-dofile(MP.."/basis/oregen.lua")
-dofile(MP.."/basis/uranium_ore.lua")
+dofile(MP.."/items/uranium_ore.lua")
+dofile(MP.."/items/rare_earth_ore.lua")
 
 -- Plates
 dofile(MP.."/basis/plates.lua")

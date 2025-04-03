@@ -45,12 +45,12 @@ minetest.register_node("techage:centri_base", {
 	description = S("TA3 Centrifuge Base"),
 	tiles = {
 		-- up, down, right, left, back, front
-		"techage_concrete.png^techage_appl_open.png^techage_frame_ta3.png",
-		"techage_concrete.png^techage_frame_ta3.png",
-		"techage_concrete.png^techage_frame_ta3.png",
-		"techage_concrete.png^techage_frame_ta3.png^techage_appl_hole_electric.png",
-		"techage_concrete.png^techage_frame_ta3.png",
-		"techage_concrete.png^techage_appl_heater.png^techage_frame_ta3.png",
+		"techage_centop.png^techage_appl_open.png^techage_frame_ta2.png",
+		"techage_centop.png^techage_frame_ta2.png",
+		"techage_centop.png^techage_frame_ta2.png",
+		"techage_centop.png^techage_frame_ta2.png^techage_appl_hole_electric.png",
+		"techage_centop.png^techage_frame_ta2.png",
+		"techage_concrete.png^techage_appl_heater_on.png^techage_frame_ta2.png",
 	},
 
 	on_timer = function(pos, elapsed)
@@ -75,12 +75,12 @@ minetest.register_node("techage:centri_base_on", {
 	description = S("TA3 Centrifuge Base"),
 	tiles = {
 		-- up, down, right, left, back, front
-		"techage_concrete.png^techage_appl_open.png^techage_frame_ta3.png",
-		"techage_concrete.png^techage_frame_ta3.png",
-		"techage_concrete.png^techage_frame_ta3.png",
-		"techage_concrete.png^techage_frame_ta3.png^techage_appl_hole_electric.png",
-		"techage_concrete.png^techage_frame_ta3.png",
-		"techage_concrete.png^techage_appl_heater_on.png^techage_frame_ta3.png",
+		"techage_centop.png^techage_appl_open.png^techage_frame_ta2.png",
+		"techage_centop.png^techage_frame_ta2.png",
+		"techage_centop.png^techage_frame_ta2.png",
+		"techage_centop.png^techage_frame_ta2.png^techage_appl_hole_electric.png",
+		"techage_centop.png^techage_frame_ta2.png",
+		"techage_concrete.png^techage_appl_heater.png^techage_frame_ta2.png",
 	},
 
 	on_timer = function(pos, elapsed)

@@ -18,3 +18,9 @@ techage.centrifuge.register_recipe({
 	recipe = {"default:sand"},
 	time = 2,
 })
+
+techage.centrifuge.register_recipe({
+	output = "techage:zirconium_nugget", "techage:cobalt",
+	recipe = {"techage:reoc"},
+	time = 15,
+})

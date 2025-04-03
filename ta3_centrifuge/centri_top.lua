@@ -345,8 +345,8 @@ local _, node_name_ta3, _ =
 minetest.register_craft({
 	output = node_name_ta3,
 	recipe = {
-		{"", "techage:usmium_nuggets", ""},
+		{"techage:vacuum_tube", "techage:usmium_nuggets", "techage:vacuum_tube"},
 		{"techage:steel_plate", "techage:centri_element", "techage:steel_plate"},
-		{"", "default:mese", ""},
+		{"techage:vacuum_tube", "default:mese", "techage:vacuum_tube"},
 	},
 })
