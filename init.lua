@@ -412,6 +412,9 @@ dofile(MP.."/items/ceramic.lua")
 dofile(MP.."/items/basalt.lua")
 dofile(MP.."/items/moreblocks.lua")
 dofile(MP.."/items/salt.lua")
+dofile(MP.."/items/h2o2.lua")
+dofile(MP.."/items/yellowcake.lua")
+dofile(MP.."/items/uf6.lua")
 
 -- Carts
 dofile(MP.."/carts/tank_cart.lua")

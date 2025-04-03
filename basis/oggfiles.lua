@@ -26,6 +26,7 @@ techage.OggFileList = {
 	"techage_booster",                         -- ./mods/techage/sounds
 	"techage_quarry",                          -- ./mods/techage/sounds
 	"techage_reboiler",                        -- ./mods/techage/sounds
+	"techage_centri",						   -- ./mods/techage/sounds
 	"jetpack_loop",                            -- ./mods/jetpack/sounds
 	"paperflip1",                              -- ./mods/unified_inventory/sounds
 	"teleport",                                -- ./mods/unified_inventory/sounds

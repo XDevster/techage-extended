@@ -88,6 +88,20 @@ local function on_rightclick(pos, node, clicker)
 	M(pos):set_string("formspec", formspec(CRD(pos).State, pos, nvm))
 end
 
+local function play_sound(pos)
+	local mem = techage.get_mem(pos)
+	if not mem.handle or mem.handle == -1 then
+		mem.handle = minetest.sound_play("techage_centri", {
+			pos = pos,
+			gain = 1,
+			max_hear_distance = 7,
+			loop = true})
+		if mem.handle == -1 then
+			minetest.after(1, play_sound, pos)
+		end
+	end
+end
+
 local function firebox_cmnd(pos, cmnd)
 	return techage.transfer(
 		{x=pos.x, y=pos.y-1, z=pos.z},
