@@ -84,10 +84,6 @@ TA3 Terminal=Terminal TA3
 Battery=Batterie
 Coal Equivalents=Équivalents charbon
 Digtron Battery=Batterie de Digtron
-
-### battery.lua ###
-### storage.lua ###
-
 Load=Charger
 
 ### bauxit.lua ###
@@ -242,6 +238,10 @@ TA Ceiling Lamp=TA Lampe de plafond
 Cement Block=Bloc de ciment
 Cement Powder=Poudre de ciment
 
+### centri_base.lua ###
+
+TA3 Centrifuge Base=
+
 ### ceramic.lua ###
 
 TA4 Ceramic Material=
@@ -335,13 +335,18 @@ TA2 Cylinder=Cylindre TA2
 
 ### detector.lua ###
 
+Configured Items=
 Counts down the number of items passed through@nand only triggers an 'on' command when it reaches zero.=
 Current countdown=
 Current countdown value.=
+Items which generate an 'on' command.@nIf empty, all passed items generate an 'on' command.=
+On Time=
 TA3 Item Detector=
 TA4 Collider Detector=
 TA4 Collider Detector Core=
 TA4 Item Detector=
+The time after the 'off' command@nuntil the next 'on' command is accepted.=
+The time between the 'on' and 'off' commands.=
 
 ### detector.lua ###
 ### electricmeter.lua ###
@@ -350,18 +355,8 @@ Countdown=
 
 ### detector.lua ###
 ### logic_block.lua ###
-### tele.lua ###
 
 Blocking Time=
-
-### detector.lua ###
-### tele.lua ###
-
-Configured Items=
-Items which generate an 'on' command.@nIf empty, all passed items generate an 'on' command.=
-On Time=
-The time after the 'off' command@nuntil the next 'on' command is accepted.=
-The time between the 'on' and 'off' commands.=
 
 ### display.lua ###
 
@@ -672,7 +667,6 @@ Charging=
 
 ### formspecs.lua ###
 ### power_terminal2.lua ###
-### storage.lua ###
 ### transformer.lua ###
 
 Storage=
@@ -1021,14 +1015,6 @@ TA1 Pine Wood Board=
 ### minicell.lua ###
 
 TA4 Streetlamp Solar Cell=
-
-### minichest.lua ###
-
-Test Chest=
-
-### minitank.lua ###
-
-Test Mini Tank=
 
 ### monitor.lua ###
 
@@ -1386,10 +1372,6 @@ TA4 Solar Carrier Module B=
 TA4 Solar Carrier Module T=
 TA4 Solar Module=
 light=
-
-### solarcell.lua ###
-### source.lua ###
-
 power=alimentation
 
 ### soundblock.lua ###
@@ -1402,7 +1384,6 @@ TA3 Sound Block=
 Axle Power Source=
 Ele Power Source=
 Power Source=
-Test Generator=
 
 ### steam_pipe.lua ###
 
@@ -1411,10 +1392,6 @@ TA2 Steam Pipe=
 ### steelmat.lua ###
 
 TechAge Steel Mat=
-
-### storage.lua ###
-
-Test Storage=
 
 ### streetlamp.lua ###
 
@@ -1536,10 +1513,6 @@ TA4 Tank=Citerne TA4
 ### tank_cart.lua ###
 
 TA Tank Cart=Chariot-citerne TA
-
-### tele.lua ###
-
-TA3 Detector=Détecteur TA3
 
 ### teleport.lua ###
 
@@ -1692,6 +1665,7 @@ TA4 Collider Detector Worker=
 
 ##### not used anymore #####
 
+TA3 Detector=Détecteur TA3
 TA4 Detector=Détecteur TA4
 TA3 Akku Box=TA3 Boite Akku
 No plan available=Aucun plan disponible

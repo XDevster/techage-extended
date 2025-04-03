@@ -84,6 +84,10 @@ TA3 Terminal=TA3 Terminal
 Battery=Batterie
 Coal Equivalents=Kohleeinheiten
 Digtron Battery=Digtron Akku
+
+### battery.lua ###
+### storage.lua ###
+
 Load=Ladung
 
 ### bauxit.lua ###
@@ -238,10 +242,6 @@ TA Ceiling Lamp=TA Deckenlampe
 Cement Block=Zement Block
 Cement Powder=Zement Pulver
 
-### centri_base.lua ###
-
-TA3 Centrifuge Base=
-
 ### ceramic.lua ###
 
 TA4 Ceramic Material=TA4 Keramik Material
@@ -335,18 +335,13 @@ TA2 Cylinder=TA2 Zylinder
 
 ### detector.lua ###
 
-Configured Items=Konfigurierte Gegenstände
 Counts down the number of items passed through@nand only triggers an 'on' command when it reaches zero.=Zählt die Anzahl der durchlaufenen Elemente herunter@nund löst nur dann einen 'ON'-Befehl aus, wenn er Null erreicht.
 Current countdown=Aktueller Zähler
 Current countdown value.=Aktueller Zählerwert.
-Items which generate an 'on' command.@nIf empty, all passed items generate an 'on' command.=Items, die einen 'on'-Kommando generieren.@nWenn leer, generieren alle übergebenen Items einen 'on'-Befehl.
-On Time=ON Zeit
 TA3 Item Detector=TA3 Item Detektor
 TA4 Collider Detector=TA4 Collider Detektor
 TA4 Collider Detector Core=TA4 Collider Detektorkern
 TA4 Item Detector=TA3 Item Detektor
-The time after the 'off' command@nuntil the next 'on' command is accepted.=Die Zeit nach dem 'off' Kommando,@nbis das nächste 'on' Kommando akzeptiert wird.
-The time between the 'on' and 'off' commands.=Die Zeit zwischen den 'on' und 'off' Kommandos.
 
 ### detector.lua ###
 ### electricmeter.lua ###
@@ -355,8 +350,18 @@ Countdown=Countdown
 
 ### detector.lua ###
 ### logic_block.lua ###
+### tele.lua ###
 
 Blocking Time=Sperrzeit
+
+### detector.lua ###
+### tele.lua ###
+
+Configured Items=Konfigurierte Gegenstände
+Items which generate an 'on' command.@nIf empty, all passed items generate an 'on' command.=Items, die einen 'on'-Kommando generieren.@nWenn leer, generieren alle übergebenen Items einen 'on'-Befehl.
+On Time=ON Zeit
+The time after the 'off' command@nuntil the next 'on' command is accepted.=Die Zeit nach dem 'off' Kommando,@nbis das nächste 'on' Kommando akzeptiert wird.
+The time between the 'on' and 'off' commands.=Die Zeit zwischen den 'on' und 'off' Kommandos.
 
 ### display.lua ###
 
@@ -667,6 +672,7 @@ Charging=Laden
 
 ### formspecs.lua ###
 ### power_terminal2.lua ###
+### storage.lua ###
 ### transformer.lua ###
 
 Storage=Speicher
@@ -1015,6 +1021,14 @@ TA1 Pine Wood Board=TA1 Kiefernholzbrett
 ### minicell.lua ###
 
 TA4 Streetlamp Solar Cell=TA4 Straßenlampen-Solarzelle
+
+### minichest.lua ###
+
+Test Chest=Testkiste
+
+### minitank.lua ###
+
+Test Mini Tank=Testminitank
 
 ### monitor.lua ###
 
@@ -1372,6 +1386,10 @@ TA4 Solar Carrier Module B=TA4 Solar Trägermodul U
 TA4 Solar Carrier Module T=TA4 Solar Trägermodul O
 TA4 Solar Module=TA4 Solarmodul
 light=Licht
+
+### solarcell.lua ###
+### source.lua ###
+
 power=Strom
 
 ### soundblock.lua ###
@@ -1384,6 +1402,7 @@ TA3 Sound Block=TA3 Sound Block
 Axle Power Source=Achsenkraftquelle
 Ele Power Source=Ele Kraftquelle
 Power Source=Stromquelle
+Test Generator=Test Generator
 
 ### steam_pipe.lua ###
 
@@ -1392,6 +1411,10 @@ TA2 Steam Pipe=TA2 Dampfleitung
 ### steelmat.lua ###
 
 TechAge Steel Mat=TechAge Stahlmatte
+
+### storage.lua ###
+
+Test Storage=Test Speicher
 
 ### streetlamp.lua ###
 
@@ -1513,6 +1536,10 @@ TA4 Tank=TA4 Tank
 ### tank_cart.lua ###
 
 TA Tank Cart=TA Tankwagen
+
+### tele.lua ###
+
+TA3 Detector=TA3 Detektor
 
 ### teleport.lua ###
 
@@ -1665,9 +1692,4 @@ TA4 Collider Detector Worker=TA4 Collider Detektor Worker
 
 ##### not used anymore #####
 
-Test Chest=Testkiste
-Test Mini Tank=Testminitank
-Test Generator=Test Generator
-Test Storage=Test Speicher
-TA3 Detector=TA3 Detektor
 output: Empty @1 or @2 with @3 expected=Leeres/Leerer @1 oder @2 mit @3 erwartet

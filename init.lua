@@ -443,6 +443,10 @@ dofile(MP.."/fusion_reactor/generator.lua")
 dofile(MP.."/fusion_reactor/turbine.lua")
 dofile(MP.."/fusion_reactor/ta5_pump.lua")
 
+-- Ores
+dofile(MP.."/basis/oregen.lua")
+dofile(MP.."/basis/uranium_ore.lua")
+
 -- Beduino extensions
 dofile(MP.."/beduino/kv_store.lua")
 
