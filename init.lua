@@ -460,5 +460,8 @@ dofile(MP.."/ta3_centrifuge/centri_top.lua")
 -- Beduino extensions
 dofile(MP.."/beduino/kv_store.lua")
 
+-- Etc.
+dofile(MP.."/items/u235.lua")
+
 -- Prevent other mods from using IE
 techage.IE = nil

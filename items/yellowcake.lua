@@ -17,7 +17,7 @@ local S = techage.S
 minetest.register_craftitem("techage:yellowcake", {
 	description = S("Yellowcake"),
 	inventory_image = "techage_yellowcake.png",
-	groups = {ta_liquid = 1},
+	groups = {powder = 1},
 })
 
 techage.recipes.add("ta4_doser", {

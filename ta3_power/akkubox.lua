@@ -18,7 +18,7 @@ local M = minetest.get_meta
 local S = techage.S
 
 local CYCLE_TIME = 2
-local PWR_CAPA = 2000
+local PWR_CAPA = 2200
 
 local Cable = techage.ElectricCable
 local power = networks.power
