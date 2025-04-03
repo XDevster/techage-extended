@@ -21,12 +21,12 @@ techage.centrifuge.register_recipe({
 
 techage.centrifuge.register_recipe({
 	output = "techage:zirconium_nugget",
-	recipe = "techage:reoc",
+	recipe = {"techage:reoc"},
 	time = 15,
 })
 
 techage.centrifuge.register_recipe({
 	output = "techage:cobalt",
-	recipe = "techage:reoc",
+	recipe = {"techage:reoc"},
 	time = 25,
 })
