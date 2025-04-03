@@ -1,3 +1,17 @@
+--[[
+
+	TechAge
+	=======
+
+	Copyright (C) 2025 G&M Addons
+
+	AGPL v3
+	See LICENSE.txt for more information
+
+	Ore Generation
+
+]]--
+
 local uranium_params = {
 	offset = 0,
 	scale = 1,
@@ -6,11 +20,11 @@ local uranium_params = {
 	octaves = 3,
 	persist = 0.7
 }
-local uranium_threshold = 0.55
+local uranium_threshold = 0.4
 
 minetest.register_ore({
 	ore_type = "scatter",
-	ore = "techage:ore_uranium",
+	ore = "techage:uranium_ore",
 	wherein = "default:stone",
 	clust_scarcity = 8*8*8,
 	clust_num_ores = 4,

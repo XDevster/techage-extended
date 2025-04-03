@@ -425,9 +425,6 @@ dofile(MP.."/collider/cooler.lua")
 dofile(MP.."/collider/detector.lua")
 dofile(MP.."/collider/worker.lua")
 
--- TA3.5
---dofile()
-
 -- TA5 Teleport
 dofile(MP.."/teleport/teleport_tube.lua")
 dofile(MP.."/teleport/teleport_pipe.lua")
@@ -446,6 +443,16 @@ dofile(MP.."/fusion_reactor/ta5_pump.lua")
 -- Ores
 dofile(MP.."/basis/oregen.lua")
 dofile(MP.."/basis/uranium_ore.lua")
+
+-- Plates
+dofile(MP.."/basis/plates.lua")
+
+-- TA3 Centrifuge
+dofile(MP.."/ta3_centrifuge/centrifuging.lua")
+dofile(MP.."/ta3_centrifuge/recipes.lua")
+dofile(MP.."/ta3_centrifuge/centri_base.lua")
+dofile(MP.."/ta3_centrifuge/centri_element.lua")
+dofile(MP.."/ta3_centrifuge/centri_top.lua")
 
 -- Beduino extensions
 dofile(MP.."/beduino/kv_store.lua")

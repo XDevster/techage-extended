@@ -4,6 +4,7 @@
 	=======
 
 	Copyright (C) 2019-2020 Joachim Stolberg
+	Copyright (C) 2025 G&M Addons
 
 	AGPL v3
 	See LICENSE.txt for more information
@@ -116,6 +117,24 @@ techage.furnace.register_recipe({
 		"techage:basalt_gravel",
 	},
 	time = 4,
+})
+
+techage.furnace.register_recipe({
+	output = "techage:steel_plate",
+	recipe = {
+		"default:steel_ingot",
+		"basic_materials:plastic_sheet"
+	},
+	time = 3,
+})
+
+techage.furnace.register_recipe({
+	output = "techage:copper_plate",
+	recipe = {
+		"default:copper_ingot",
+		"basic_materials:plastic_sheet"
+	},
+	time = 3,
 })
 
 techage.furnace.register_recipe({

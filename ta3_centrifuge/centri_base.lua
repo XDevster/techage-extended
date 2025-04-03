@@ -131,7 +131,7 @@ minetest.register_craft({
 	output = "techage:centri_base",
 	recipe = {
 		{'techage:copper_plate', 'techage:steel_plate', 'techage:copper_plate'},
-		{'default:obsidian', 'techage:centri_element', 'default:obsidian'},
+		{'default:obsidian', '', 'default:obsidian'},
 		{'techage:copper_plate', 'default:mese_crystal', 'techage:copper_plate'},
 	},
 })

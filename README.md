@@ -1,8 +1,8 @@
 # Tech Age Extended [techage] (Minetest 5.4+)
 
-Tech Age, a mod to go through 5 tech ages in search of wealth and power.
+Tech Age, a mod to go through 6 tech ages in search of wealth and power.
 
-![screenshot](https://github.com/joe7575/techage/blob/master/screenshot.png)
+![screenshot](https://github.com/G-M-Addons/techage-extended/blob/master/screenshot.png?raw=true)
 
 
 Important facts:
@@ -24,11 +24,11 @@ In contrast to TechPack, the resources are more limited and it is much more diff
 If you move, place, or remove blocks with any tool, at best, only the information is lost.
 In the worst case, the server crashes.**
 
-[Manuals](https://github.com/joe7575/techage/wiki)
 
 
 ### License
 Copyright (C) 2019-2025 Joachim Stolberg
+Copyright (C) 2025 G&M Addons
 Code: Licensed under the GNU AGPL version 3 or later. See LICENSE.txt  
 Textures: CC BY-SA 3.0
 

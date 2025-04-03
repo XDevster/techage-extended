@@ -20,8 +20,8 @@ minetest.register_craftitem("techage:centri_element", {
 minetest.register_craft({
 	output = "techage:centri_element",
 	recipe = {
-		{'techage:steel_plate', 'techage:iron_plate', 'techage:steel_plate'},
-		{'techage:iron_plate', 'basic_materials:gear_steel', 'techage:iron_plate'},
-		{'techage:steel_plate', 'techage:iron_plate', 'techage:steel_plate'},
+		{"techage:steel_plate", "techage:steel_plate", "techage:steel_plate"},
+		{"techage:steel_plate", "basic_materials:gear_steel", "techage:steel_plate"},
+		{"techage:steel_plate", "techage:steel_plate", "techage:steel_plate"},
 	},
 })
