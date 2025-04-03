@@ -4,11 +4,12 @@
 	=======
 
 	Copyright (C) 2019-2022 Joachim Stolberg
+	Copyright (C) 2025 G&M Addons
 
 	AGPL v3
 	See LICENSE.txt for more information
 
-	TA4 Doser
+	TA3.5 Doser
 
 ]]--
 
@@ -87,23 +88,23 @@ end
 
 
 local function can_start(pos, nvm, state)
-	-- check reactor
+	-- check gas centri
 	local res = reactor_cmnd(pos, "check")
 	if not res then
-		return S("reactor defect")
+		return S("Gas Centrifuge defect")
 	end
 	res = reactor_cmnd(pos, "can_start")
 	if not res then
-		return S("reactor defect or no power")
+		return S("Gas Centrifuge defect or no power")
 	end
 	local recipe = recipes.get(nvm, "ta4_doser")
 	if recipe.catalyst then
 		res = reactor_cmnd(pos, "catalyst")
 		if not res or res == "" then
-			return S("catalyst missing")
+			return S("Catalyst missing")
 		end
 		if res ~= recipe.catalyst then
-			return S("wrong catalyst")
+			return S("Wrong catalyst")
 		end
 	end
 	return true
@@ -129,7 +130,7 @@ local State = techage.NodeStates:new({
 	cycle_time = CYCLE_TIME,
 	standby_ticks = STANDBY_TICKS,
 	formspec_func = formspec,
-	infotext_name = "TA4 Doser",
+	infotext_name = "TA3.5 Doser",
 	can_start = can_start,
 	start_node = start_node,
 	stop_node = stop_node,
@@ -176,7 +177,7 @@ local function dosing(pos, nvm, elapsed)
 	if not reactor_cmnd(pos, "power") then
 		if not nvm.techage_countdown or nvm.techage_countdown < 3 then
 			reactor_cmnd(pos, "stop")
-			State:nopower(pos, nvm, S("reactor has no power"))
+			State:nopower(pos, nvm, S("Gas Centrifuge has no power"))
 			return
 		end
 		State:idle(pos, nvm)
@@ -192,19 +193,19 @@ local function dosing(pos, nvm, elapsed)
 		nvm.check_cnt = 0
 		local res = reactor_cmnd(pos, "check")
 		if not res then
-			State:fault(pos, nvm, S("reactor defect"))
+			State:fault(pos, nvm, S("Gas Centrifuge defect"))
 			reactor_cmnd(pos, "stop")
 			return
 		end
 		if recipe.catalyst then
 			res = reactor_cmnd(pos, "catalyst")
 			if not res then
-				State:fault(pos, nvm, S("catalyst missing"))
+				State:fault(pos, nvm, S("Catalyst missing"))
 				reactor_cmnd(pos, "stop")
 				return
 			end
 			if res ~= recipe.catalyst then
-				State:fault(pos, nvm, S("wrong catalyst"))
+				State:fault(pos, nvm, S("Wrong catalyst"))
 				reactor_cmnd(pos, "stop")
 				return
 			end
@@ -411,7 +412,7 @@ techage.register_node({"techage:ta4_doser", "techage:ta4_doser_on"}, {
 })
 
 techage.recipes.register_craft_type("ta4_doser", {
-	description = S("TA4 Reactor"),
+	description = S("TA3.5 Gas Centrifuge"),
 	icon = 'techage_reactor_filler_plan.png',
 	width = 2,
 	height = 2,

@@ -4,11 +4,12 @@
 	=======
 
 	Copyright (C) 2019-2020 Joachim Stolberg
+	Copyright (C) 2025 G&M Addons
 
 	AGPL v3
 	See LICENSE.txt for more information
 
-	TA4 Reactor
+	TA3.5 Gas Centrifuge (formely TA4 Reactor)
 
 ]]--
 
@@ -19,7 +20,7 @@ local Cable = techage.ElectricCable
 local liquid = networks.liquid
 
 minetest.register_node("techage:ta4_reactor_fillerpipe", {
-	description = S("TA4 Reactor Filler Pipe"),
+	description = S("TA3.5 Gas Centrifuge Filler Pipe"),
 	tiles = {
 		-- up, down, right, left, back, front
 		"techage_reactor_filler_top.png",
@@ -123,7 +124,7 @@ techage.register_node({"techage:ta4_reactor_fillerpipe"}, {
 liquid.register_nodes({"techage:ta4_reactor_fillerpipe"}, Pipe, "tank", {"U"}, {})
 
 local function formspec()
-	local title = S("TA4 Reactor")
+	local title = S("TA3.5 Gas Centrifuge")
 	return "size[8,6]"..
 		default.gui_bg..
 		default.gui_bg_img..
@@ -152,7 +153,7 @@ local function allow_metadata_inventory_take(pos, listname, index, stack, player
 end
 
 minetest.register_node("techage:ta4_reactor", {
-	description = S("TA4 Reactor"),
+	description = S("TA3.5 Gas Centrifuge"),
 	tiles = {"techage_reactor_side.png"},
 	drawtype = "mesh",
 	mesh = "techage_cylinder_12h.obj",

@@ -4,6 +4,7 @@
 	=======
 
 	Copyright (C) 2019-2021 Joachim Stolberg
+	Copyright (C) 2025 G&M Addons
 
 	AGPL v3
 	See LICENSE.txt for more information
@@ -63,7 +64,7 @@ local function is_running(pos, nvm)
 end
 
 minetest.register_node("techage:ta4_reactor_stand", {
-	description = S("TA4 Reactor Stand"),
+	description = S("TA3.5 Gas Centrifuge Stand"),
 	tiles = {
 		-- up, down, right, left, back, front
 		"techage_reactor_stand_top.png^[transformR90",
@@ -160,7 +161,7 @@ techage.register_node({"techage:ta4_reactor_stand"}, {
 })
 
 minetest.register_node("techage:ta4_reactor_base", {
-	description = S("TA4 Reactor Base"),
+	description = S("TA3.5 Gas Centrifuge Base"),
 	tiles = {
 		-- up, down, right, left, back, front
 		"techage_concrete.png^techage_appl_arrowXL.png^techage_appl_hole_pipe.png^[transformR270",
